@@ -1,0 +1,55 @@
+.cabecalhoPrincipal .container{
+    display: flex; /* começar colocando o display como flex no pai de todos os filho q quer mexer,
+     ja os deixando um ao lado do outro */
+
+    align-items: center; /* alinha os elemntos a paritr do seu centro(neste caso os alinhou verticalmente)*/
+
+    justify-content: space-between; /*space-between : os ítens são distribuídos de forma igual ao longo
+     da linha; o primeiro ítem junto à borda inicial da linha, o último junto à borda final da linha.*/
+    
+     /*Tambem  pode se usar o space-around : os ítens são distribuídos na linha com o mesmo espaçamento
+      entre eles. */
+}
+
+.cabecalhoPrincipal-nav{
+    display: flex   ;
+}
+
+.rodapePrincipal-patrocinadores .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.rodapePrincipal-patrocinadores-list{
+    display: flex;
+    width: 70%;
+    align-items: center;
+    margin-right: 5%;
+    justify-content: space-around;
+    
+}
+.rodapePrincipal-contatoForm{
+    width: 25%;
+}
+
+.rodapePrincipal-contatoForm-fieldset{
+    display: flex;
+}
+
+.rodapePrincipal-navMap-list{
+    display: flex;
+    flex-direction:column;  /* este comando serve para direcionar a direção do flex,podendo alterar desde
+    coisas q deveriam ir para o lado irem para baixo como inverter suas ordens */
+    flex-wrap: wrap; /* este comando define a quebra da linhsa após atingir o limite de tamanho para 
+    ele não o ultrapassar */
+    height: 250px;
+}
+
+.conteudoPrincipal-cursos{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.conteudoPrincipal-cursos-link{
+    width: 20%;
+}
